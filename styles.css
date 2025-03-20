@@ -1,3 +1,4 @@
+<!-- styles.css -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
 
@@ -32,6 +33,7 @@
     }
     .floating {
         animation: floatAnimation 4s infinite alternate ease-in-out;
+        position: relative;
     }
     @keyframes floatAnimation {
         0% { transform: translateY(0px); }
