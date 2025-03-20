@@ -59,7 +59,6 @@
     h1 {
         animation: heartbeat 2s infinite;
     }
-</style>
 .floating {
     animation: float 3s infinite alternate ease-in-out;
     position: relative;
@@ -69,3 +68,5 @@
     0% { transform: translateY(0px); }
     100% { transform: translateY(-20px); }
 }
+
+</style>
