@@ -8,6 +8,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="your-song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
     <header>
         <h1>For My Beautiful Queen ❤️</h1>
         <p>You are the most beautiful person inside and out.</p>
@@ -16,9 +21,9 @@
     <section class="gallery">
         <h2>Your Beauty in Every Moment ✨</h2>
         <div class="images">
-            <img src="image1.jpg" alt="Her smile">
-            <img src="image2.jpg" alt="Her beautiful eyes">
-            <img src="image3.jpg" alt="A special moment together">
+            <img class="floating" src="image1.jpg" alt="Her smile">
+            <img class="floating" src="image2.jpg" alt="Her beautiful eyes">
+            <img class="floating" src="image3.jpg" alt="A special moment together">
         </div>
     </section>
     
@@ -27,65 +32,18 @@
         <p id="loveText"></p>
     </section>
     
+    <section class="heartfelt">
+        <h2>From the Depths of My Heart 💌</h2>
+        <p>
+            My love, words will never be enough to express how much you mean to me. Every moment with you is a blessing, 
+            every smile of yours is a light in my life, and every heartbeat of mine beats for you. 
+            You are not just beautiful on the outside but even more so in your heart. 
+            I fall for you every single day, and I promise to cherish and love you endlessly. ❤️
+        </p>
+    </section>
+    
     <footer>
         <p>Made with ❤️ by Your Love</p>
     </footer>
 </body>
 </html>
-
-<!-- styles.css -->
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        background: linear-gradient(135deg, #ff758c, #ff7eb3);
-        color: #fff;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background: rgba(255, 77, 121, 0.9);
-        padding: 20px;
-        font-size: 28px;
-        font-family: 'Pacifico', cursive;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .gallery {
-        margin: 20px;
-    }
-    .images img {
-        width: 250px;
-        height: auto;
-        margin: 15px;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-        transition: transform 0.3s ease-in-out;
-    }
-    .images img:hover {
-        transform: scale(1.1);
-    }
-    .message {
-        margin: 30px;
-        font-size: 22px;
-        font-weight: 600;
-    }
-    footer {
-        margin-top: 40px;
-        padding: 15px;
-        background: rgba(255, 77, 121, 0.9);
-        color: white;
-        font-size: 16px;
-    }
-    
-    /* Heart Animation */
-    @keyframes heartbeat {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.1); }
-        100% { transform: scale(1); }
-    }
-    h1 {
-        animation: heartbeat 2s infinite;
-    }
-</style>
