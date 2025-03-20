@@ -1,3 +1,4 @@
+<!-- script.js -->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         const loveText = document.getElementById("loveText");
